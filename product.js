@@ -11,7 +11,7 @@ const product=new Mongoose.Schema({
     productPrice:{
         type:Number,
     },
-    Quantity:{
+    quantity:{
         type:Number,
     }
 
