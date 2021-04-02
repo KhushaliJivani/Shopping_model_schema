@@ -1,26 +1,19 @@
-const { Mongoose } = require("mongoose");
-
-const sell_product=new Mongoose.Schema({
+const Mongoose= require("mongoose");
+const orderProduct=new Mongoose.Schema({
     productid:{
-        type:Number,
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'user',
     },
     userid:{
-        type:Number,
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'product',
     },
-    price:
+    Price:
     {
         type:Number,
     },
     quantity:{
         type:Number,
     },
-    name:{
-        type:String,
-    },
-    city:{
-        type:String,
-    },
-    country:{
-        type:String,
-    }
 })
+module.export=mongoose.model("order",orderProduct);
