@@ -1,20 +1,17 @@
 const Mongoose = require("mongoose");
 
 const product=new Mongoose.Schema({
-    userid:{
+    userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'user',
     },
     productName:{
         type:String,
     },
-    productDetail:{
-        type:String,
-    },
     productPrice:{
         type:Number,
     },
-    productQuantity:{
+    Quantity:{
         type:Number,
     }
 

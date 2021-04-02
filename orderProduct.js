@@ -1,14 +1,14 @@
 const Mongoose= require("mongoose");
 const orderProduct=new Mongoose.Schema({
-    productid:{
+    productId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'user',
     },
-    userid:{
+    userId:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'product',
     },
-    Price:
+    totalPrice:
     {
         type:Number,
     },
